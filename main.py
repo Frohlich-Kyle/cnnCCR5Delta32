@@ -71,7 +71,9 @@ for k, (train_data, val_data) in enumerate(folds):
             x, y = batch[0].to(device), batch[1].to(device)
             output = newModel(x)
             val_loss = lossFunc(output, y)
+            total_val_loss += val_loss.item()
 
+        avg_val_loss = total_val_loss / len(val_loader)
         allValLosses.append(val_loss.item())
         print(f"Fold {k+1} Val Loss: {val_loss.item():.4f}")
 
