@@ -1,10 +1,5 @@
 Kyle Frohlich
 
-__Overview__
-This project serves as a simple tool to build the understanding, knowledge, and usage of convolutional neural networks
-in the context of biological applications. This is a starter project I undertook to apply the knowledge I have learned
-about developing deep learning solutions. 
-
 __Problem Statement__
 Particularly, this project seeks to create a model that can learn and predict whether or not someone has a resistance
 to the Human Immunodeficiency Virus (HIV) through checking for a particular mutation. The mechanism of which is a widely
@@ -61,8 +56,7 @@ The Delta32 indel of CCR5 is a relatively rare mutation that is not frequently s
 the "problem" being solved. This means no further sequencing is required. As such Delta32 CCR5 sequences are particularly uncommon. 
 To introduce a more comprehensive environment, synthetic augmented data was created to provide more training examples for the model. 
 The file augmentData.py takes the known and real CCR5 sequences, fetched from NCBI, and introduces realistic and sporadic single nucleotide 
-polymorphisms (SNP) to prevent the model from rote memorization. While under real circumstances this is unacceptable as a proper training
-method, this project serves more as a proof of concept rather than an attempt at making a working tool.
+polymorphisms (SNP) to prevent the model from rote memorization. 
 
 __Model Architecture__
 Convolutional 1D Layer
